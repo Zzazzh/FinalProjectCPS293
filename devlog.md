@@ -9,8 +9,7 @@
 * Searched for 2D Assets--to no success yet-- on itch.io
 * Download Export Template
 
-## SEP24 Xhr: Worked on Player Movement
+## SEP24 40min: Worked on Player Movement
 * [Youtube Tutorial, Your First 2D GAME From Zero with GODOT 4! Vampire Survivor Style] (https://www.youtube.com/watch?v=GwCiGixlqiU)
-* Found a tutorial on GDQuest youtube channel to work on 2D game. used this as a template for player movement 
-
+* used this as a template for top player movement 
 * Created a draft version of a player sprite to see if movement controls are working
