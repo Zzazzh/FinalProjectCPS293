@@ -7,3 +7,5 @@
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_0spqw")]
 position = Vector2(517, 133)
 scale = Vector2(1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]

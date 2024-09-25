@@ -1,6 +1,6 @@
 # Fall 2024 - Intro to Game Design @ SUNY New Paltz
 * Name: Zachary Lopane
-* [Trello Board]()
+* [Trello Board](https://trello.com/b/mR0VP2jR/final-project-todo)
 * [Proposal]()
 
 ## SEP24 1hr: Set up Final Project
