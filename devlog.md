@@ -14,7 +14,9 @@
 * used this as a template for top player movement 
 * Created a draft version of a player sprite to see if movement controls are working
 
-## SEP29 45min: Worked on adding "Player Bounds"
+## SEP29 45min: Worked on adding "Player Bounds" + added controller functionality
 * added draft background (color rect) to make player bound more visible
 * tried to convert sprite 2D ring to collision Shape
 * Created 4 2D polygon collision shapes, to make a ring that players cannot cross
+
+

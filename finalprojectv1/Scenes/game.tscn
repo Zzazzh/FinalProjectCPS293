@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://d2itemvuu2sn5"]
 
 [ext_resource type="PackedScene" uid="uid://c10731toidaso" path="res://Scenes/player.tscn" id="1_0spqw"]
-[ext_resource type="PackedScene" uid="uid://clpsvb566criv" path="res://Scenes/playerbound.tscn" id="2_arats"]
+[ext_resource type="PackedScene" uid="uid://c2c8dk88bf225" path="res://Scenes/playerbound.tscn" id="2_arats"]
 
 [node name="Node" type="Node"]
 
@@ -11,8 +11,8 @@ offset_bottom = 652.0
 color = Color(0.830335, 0.830335, 0.830335, 1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_0spqw")]
-position = Vector2(500, 241)
-scale = Vector2(1, 1)
+position = Vector2(498, 241)
+scale = Vector2(1.92, 1.92)
 
 [node name="Area2D" parent="." instance=ExtResource("2_arats")]
-position = Vector2(498, 276)
+position = Vector2(499, 247)
