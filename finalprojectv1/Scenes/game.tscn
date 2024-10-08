@@ -63,3 +63,6 @@ scale = Vector2(1.32, 1.32)
 text = "Arrows to move
 V to attack"
 uppercase = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(573, 323)
