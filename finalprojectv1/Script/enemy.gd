@@ -7,3 +7,7 @@ func _physics_process(delta: float) -> void:
 	var direction = global_position.direction_to(playerbound.global_position)
 	velocity = direction * 200.0
 	move_and_slide()
+
+func despawn():
+	if %enemybody.global_position == playerbound.global_position:
+		queue_free()

@@ -1,0 +1,129 @@
+[gd_scene load_steps=16 format=3 uid="uid://bv6cj4nlyxxc6"]
+
+[ext_resource type="Texture2D" uid="uid://0dbvywu0qbb1" path="res://Sprites/attckdraft.png" id="1_1rj2b"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wmgxv"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iauhb"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adc7p"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_om4ut"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dorp"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7j1jc"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yypip"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynvpq"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26wrh"]
+atlas = ExtResource("1_1rj2b")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ah8mw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wmgxv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iauhb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adc7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_om4ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dorp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7j1jc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yypip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynvpq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_26wrh")
+}],
+"loop": false,
+"name": &"attackleft",
+"speed": 20.0
+}]
+
+[sub_resource type="Animation" id="Animation_io5a8"]
+resource_name = "attackleft"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:sprite_frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("SpriteFrames_ah8mw")]
+}
+
+[sub_resource type="Animation" id="Animation_dx7yi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:sprite_frames")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("SpriteFrames_ah8mw")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_08jfc"]
+_data = {
+"RESET": SubResource("Animation_dx7yi"),
+"attackleft": SubResource("Animation_io5a8")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_edbf6"]
+
+[node name="attack" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ah8mw")
+animation = &"attackleft"
+frame = 8
+frame_progress = 1.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_08jfc")
+}
+autoplay = "attackleft"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_edbf6")

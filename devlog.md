@@ -3,7 +3,18 @@
 * [Trello Board](https://trello.com/b/mR0VP2jR/final-project-todo)
 * [Proposal]()
 
-## OCT01 hr: Added enemy spawning
+## OCT 08 1.25hr: implement attack
+* [added draft animation] (https://www.youtube.com/watch?v=8EVHNbgQCBg)
+* created draft pixel art attack to see in debug
+
+## OCT07 1.5hr: implement killzone (fail)
+* began creating kill zone to automatically respawn enemies when they reach the center of the playerbounds
+* ran into issues with enemy spawning, tried reloading godot project and ran into a "missing dependencies" error
+* reassigned sprites and scenes and had to redo "enemy" scene in order to resolve issue
+
+## OCT01 2hr: Added enemy spawning
+* finished implementing playerbounds that allowed enemies (and not players) to pass through
+* created ui button to spawn enemies randomly along 2D path
 
 ## SEP29 .75hr: Worked on adding "Player Bounds" + added controller functionality
 * added draft background (color rect) to make player bound more visible

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c10731toidaso" path="res://Scenes/player.tscn" id="1_0spqw"]
 [ext_resource type="Script" path="res://Script/game.gd" id="1_rox4j"]
 [ext_resource type="PackedScene" uid="uid://c2c8dk88bf225" path="res://Scenes/playerbound.tscn" id="2_arats"]
-[ext_resource type="Script" path="res://Scenes/button.gd" id="4_ce0x6"]
+[ext_resource type="Script" path="res://Script/button.gd" id="4_ce0x6"]
 
 [sub_resource type="Curve2D" id="Curve2D_wg2tw"]
 _data = {
@@ -17,7 +17,7 @@ script = ExtResource("1_rox4j")
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1152.0
 offset_bottom = 652.0
-color = Color(0.830335, 0.830335, 0.830335, 1)
+color = Color(0.224353, 0.382639, 0.359482, 1)
 
 [node name="Button" type="Button" parent="."]
 offset_left = 115.0
@@ -33,7 +33,7 @@ scale = Vector2(1.92, 1.92)
 
 [node name="playerbound" parent="." instance=ExtResource("2_arats")]
 position = Vector2(548, 290)
-scale = Vector2(0.520002, 0.520002)
+scale = Vector2(0.680002, 0.680002)
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(13, -7)
