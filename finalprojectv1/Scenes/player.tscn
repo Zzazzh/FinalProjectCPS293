@@ -1,34 +1,131 @@
-[gd_scene load_steps=6 format=3 uid="uid://c10731toidaso"]
+[gd_scene load_steps=9 format=3 uid="uid://c10731toidaso"]
 
 [ext_resource type="Texture2D" uid="uid://csk2t2m7r278d" path="res://Sprites/PlayerDraft.png" id="1_8nrlk"]
 [ext_resource type="Script" path="res://Script/player.gd" id="1_tv8cf"]
-[ext_resource type="PackedScene" uid="uid://cxnhnhc83e1ot" path="res://Scenes/guitar.tscn" id="3_r7f5r"]
-[ext_resource type="PackedScene" uid="uid://bv6cj4nlyxxc6" path="res://Scenes/attack.tscn" id="3_tbg6k"]
+[ext_resource type="Texture2D" uid="uid://0dbvywu0qbb1" path="res://Sprites/attckdraft.png" id="4_fhrqx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aotvk"]
 radius = 13.0561
 height = 44.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_as3l6"]
+
+[sub_resource type="Animation" id="Animation_rl3u0"]
+resource_name = "attack"
+length = 0.450005
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [7, 0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_0swg2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:hframes")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [7]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xinif"]
+_data = {
+"RESET": SubResource("Animation_0swg2"),
+"attack": SubResource("Animation_rl3u0")
+}
+
 [node name="player" type="CharacterBody2D"]
-position = Vector2(-5.96046e-07, 5.96046e-07)
 scale = Vector2(0.995705, 1)
 collision_mask = 3
 script = ExtResource("1_tv8cf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(7.15256e-07, -4.76837e-07)
 scale = Vector2(3.95354, 3.27371)
 texture = ExtResource("1_8nrlk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_aotvk")
 
-[node name="attack" parent="." instance=ExtResource("3_tbg6k")]
-position = Vector2(34.1467, -2)
-scale = Vector2(1.84362, 1.84362)
-frame_progress = 0.811252
+[node name="Node2D" type="Node2D" parent="."]
 
-[node name="Area2D" parent="." instance=ExtResource("3_r7f5r")]
-position = Vector2(19.082, -5)
-rotation = 0.780354
-scale = Vector2(1.37035, 1.45315)
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(32.138, 1)
+scale = Vector2(1.56242, 1.56242)
+shape = SubResource("CapsuleShape2D_as3l6")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(32.138, 1)
+scale = Vector2(1.56242, 1.56242)
+texture = ExtResource("4_fhrqx")
+hframes = 3
+vframes = 3
+frame = 7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Area2D"]
+libraries = {
+"": SubResource("AnimationLibrary_xinif")
+}

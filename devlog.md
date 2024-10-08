@@ -6,8 +6,9 @@
 ## OCT 08 1.25hr: implement attack
 * [added draft animation] (https://www.youtube.com/watch?v=8EVHNbgQCBg)
 * created draft pixel art attack to see in debug
+* 
 
-## OCT07 1.5hr: implement killzone (fail)
+## OCT07 1.5hr: implement killzone (failed)
 * began creating kill zone to automatically respawn enemies when they reach the center of the playerbounds
 * ran into issues with enemy spawning, tried reloading godot project and ran into a "missing dependencies" error
 * reassigned sprites and scenes and had to redo "enemy" scene in order to resolve issue
