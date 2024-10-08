@@ -6,8 +6,9 @@ func _physics_process(delta: float) -> void:
 	velocity = direction * 500
 	move_and_slide()
 	
+	
 	if Input.is_action_just_pressed("attack"):
 		print("attack")
-		$Area2D/AnimationPlayer.play("attack")
+		$Sprite2D/Area2D/AnimationPlayer.play("attack")
 	else:
 		pass

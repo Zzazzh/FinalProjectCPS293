@@ -7,7 +7,7 @@
 
 [sub_resource type="Curve2D" id="Curve2D_wg2tw"]
 _data = {
-"points": PackedVector2Array(-3.1328, 257.673, 3.1328, -257.673, -20, 332, -406.67, 1.66668, 406.67, -1.66668, 544, -142, 8.3334, -255.002, -8.3334, 255.002, 1133, 306, 308.336, -6.66672, -308.336, 6.66672, 535, 751, -6.26561, 135.494, 6.26561, -135.494, -18, 336)
+"points": PackedVector2Array(0, 0, 0, 0, 313.1, 76, -10.0941, -58.3075, 10.0941, 58.3075, 364.17, 189, 13.5883, -97.838, -13.5883, 97.838, 362.206, 432, 27.5648, -13.8357, -27.5648, 13.8357, 323.314, 532, 0, 0, 0, 0, 255.351, 545)
 }
 point_count = 5
 
@@ -15,17 +15,26 @@ point_count = 5
 script = ExtResource("1_rox4j")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 offset_right = 1152.0
 offset_bottom = 652.0
 color = Color(0.224353, 0.382639, 0.359482, 1)
 
 [node name="Button" type="Button" parent="."]
-offset_left = 115.0
-offset_top = 81.0
-offset_right = 174.0
-offset_bottom = 112.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -534.0
+offset_top = -291.0
+offset_right = -475.0
+offset_bottom = -260.0
+grow_horizontal = 2
+grow_vertical = 2
 text = "spawn"
 script = ExtResource("4_ce0x6")
+metadata/_edit_use_anchors_ = true
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_0spqw")]
 position = Vector2(548, 289)
@@ -37,12 +46,13 @@ scale = Vector2(0.680002, 0.680002)
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2(13, -7)
+scale = Vector2(2.54552, 1)
 curve = SubResource("Curve2D_wg2tw")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
 unique_name_in_owner = true
-position = Vector2(-20, 332)
-rotation = -1.55864
+position = Vector2(313.1, 76)
+rotation = 1.14632
 
 [node name="Label" type="Label" parent="."]
 offset_left = 201.0

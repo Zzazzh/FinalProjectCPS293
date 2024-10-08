@@ -8,6 +8,8 @@ func _physics_process(delta: float) -> void:
 	velocity = direction * 200.0
 	move_and_slide()
 
-func despawn():
-	if %enemybody.global_position == playerbound.global_position:
-		queue_free()
+
+
+func _on_hurtbox_area_entered(area: Area2D) -> void:
+	print_debug("slime hit") 
+	queue_free()

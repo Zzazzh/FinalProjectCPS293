@@ -7,7 +7,7 @@ func spawn_enemy():
 	
 func _ready():
 	var button = Button.new()
-	button.text = "Click me"
+	button.text = "spawn"
 	button.pressed.connect(self._button_pressed)
 	add_child(button)
 
