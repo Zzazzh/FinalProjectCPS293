@@ -43,3 +43,13 @@ curve = SubResource("Curve2D_wg2tw")
 unique_name_in_owner = true
 position = Vector2(-20, 332)
 rotation = -1.55864
+
+[node name="Label" type="Label" parent="."]
+offset_left = 201.0
+offset_top = 259.0
+offset_right = 345.0
+offset_bottom = 308.0
+scale = Vector2(1.32, 1.32)
+text = "Arrows to move
+V to attack"
+uppercase = true
