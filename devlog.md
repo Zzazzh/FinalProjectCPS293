@@ -3,10 +3,11 @@
 * [Trello Board](https://trello.com/b/mR0VP2jR/final-project-todo)
 * [Proposal]()
 
-## OCT 08 1.25hr: implement attack
+## OCT 08 3r: implement attack
 * [added draft animation] (https://www.youtube.com/watch?v=8EVHNbgQCBg)
 * created draft pixel art attack to see in debug
-* 
+* reworked animation sprite, and reset animation scene
+* fixed bug where player would automatically move left upon start (and clip through player bounds)
 
 ## OCT07 1.5hr: implement killzone (failed)
 * began creating kill zone to automatically respawn enemies when they reach the center of the playerbounds
