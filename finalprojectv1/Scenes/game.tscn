@@ -7,9 +7,9 @@
 
 [sub_resource type="Curve2D" id="Curve2D_wg2tw"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 313.1, 76, -10.0941, -58.3075, 10.0941, 58.3075, 364.17, 189, 13.5883, -97.838, -13.5883, 97.838, 362.206, 432, 27.5648, -13.8357, -27.5648, 13.8357, 323.314, 532, 0, 0, 0, 0, 255.351, 545)
+"points": PackedVector2Array(0, 0, 0, 0, 313.1, 76, -10.0941, -58.3075, 10.0941, 58.3075, 364.17, 189, 13.5883, -97.838, -13.5883, 97.838, 368.883, 423, 27.5648, -13.8357, -27.5648, 13.8357, 319.385, 568, 0, 0, 0, 0, 279.707, 548, 0, 0, 0, 0, 277.35, 538, 0, 0, 0, 0, 274.207, 530)
 }
-point_count = 5
+point_count = 7
 
 [node name="Game" type="Node"]
 script = ExtResource("1_rox4j")
@@ -21,17 +21,10 @@ offset_bottom = 652.0
 color = Color(0.224353, 0.382639, 0.359482, 1)
 
 [node name="Button" type="Button" parent="."]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -534.0
-offset_top = -291.0
-offset_right = -475.0
-offset_bottom = -260.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = 8.0
+offset_top = 10.0
+offset_right = 67.0
+offset_bottom = 41.0
 text = "spawn"
 script = ExtResource("4_ce0x6")
 metadata/_edit_use_anchors_ = true
