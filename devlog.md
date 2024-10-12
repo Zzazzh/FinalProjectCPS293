@@ -1,7 +1,7 @@
 # Fall 2024 - Intro to Game Design @ SUNY New Paltz
 * Name: Zachary Lopane
 * [Trello Board](https://trello.com/b/mR0VP2jR/final-project-todo)
-* [Proposal](https://sunynp-my.sharepoint.com/:b:/g/personal/lopanez1_newpaltz_edu/EUyNeUgwA89Eg0DhCEoWlqMBaKKF7h58ouXLQZuGPFgYVA?e=D5vsW4)
+* [Proposal](https://github.com/Zzazzh/FinalProjectCPS293/blob/main/Final%20Project%20Proposal%20Lopane.pdf)
 
 ## 2024-10-8 3r: implement attack
 * [added draft animation] (https://www.youtube.com/watch?v=8EVHNbgQCBg)
