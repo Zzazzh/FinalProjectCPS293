@@ -2,7 +2,7 @@ extends Area2D
 
 @onready var animp = $AnimationPlayer
 
-var rotation_speed = 3
+var rotation_speed = 5
 
 var sensor = 0 
 
@@ -25,10 +25,9 @@ func _process(delta: float) -> void:
 
 func _on_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	sensor = 1 
-	Global.sensor_enemy_up = 1
-
+	Global.sensor_enemy = 1
 
 
 func _on_area_shape_exited(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	sensor =  0
-	Global.sensor_enemy_up = 0
+	Global.sensor_enemy = 0

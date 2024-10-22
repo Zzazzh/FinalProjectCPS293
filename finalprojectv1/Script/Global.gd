@@ -1,4 +1,4 @@
 extends Node
 
 #sensor 
-var sensor_enemy_up = 0
+var sensor_enemy = 0

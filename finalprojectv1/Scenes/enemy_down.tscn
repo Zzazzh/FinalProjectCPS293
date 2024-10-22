@@ -7,15 +7,15 @@
 radius = 9.0
 
 [node name="Enemy_down" type="Area2D"]
-position = Vector2(0, -3)
-scale = Vector2(4, 4)
+scale = Vector2(2, 2)
 script = ExtResource("1_8644r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -3.25)
+position = Vector2(0.162231, -0.0110931)
 rotation = 3.14159
 scale = Vector2(2, 2)
 texture = ExtResource("1_3locv")
+offset = Vector2(0.0811132, 0.994454)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_w11yi")

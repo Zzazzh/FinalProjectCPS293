@@ -7,10 +7,10 @@ var sensor = 0
 func _process(delta: float) -> void:
 	
 	#move up 
-	position.y -= speed * delta
+	position.x -= speed * delta
 	
 	#delete when hitting player bounds
-	if position.y < 325:
+	if position.x < 575:
 		queue_free()
 
 	#sensor

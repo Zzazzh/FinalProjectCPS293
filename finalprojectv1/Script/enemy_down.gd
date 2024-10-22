@@ -15,13 +15,14 @@ func _process(delta: float) -> void:
 
 	#sensor
 	if sensor == 1:
-		if Global.sensor_enemy_up == 1:
+		if Global.sensor_enemy == 1:
 			if Input.is_action_just_pressed("attack"):
 				queue_free()
 		pass
 
 func _on_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	sensor = 1
+	
 
 func _on_area_shape_exited(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	sensor = 0
