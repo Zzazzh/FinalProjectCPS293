@@ -1,7 +1,7 @@
 extends Area2D
 @onready var playerbound = get_node("/root/Game/playerbound")
 
-var speed = 100
+var speed = 75
 var sensor = 0
 
 func _process(delta: float) -> void:

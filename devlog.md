@@ -3,10 +3,10 @@
 * [Trello Board](https://trello.com/b/mR0VP2jR/final-project-todo)
 * [Proposal](https://github.com/Zzazzh/FinalProjectCPS293/blob/main/Proposal.pdf)
 
-##2024-10-22 4 hr: Created Direction Indicator, Enemy movement
+##2024-10-22 5 hr: (before class) Created Direction Indicator, Enemy movement 
 * created direction indicator with rotational movement
 * added signals for "good" and "bad" hits
-* 
+* made enemy spawn randomized
 
 ## 2024-10-21 2 hr: Found Rhythm Game tutorial videos and forums to create animation, enemy spawn, and enemy despawn. Began "enemy_up" scene
 * [Complete Godot Rhythm Game Tutorial] (https://www.youtube.com/watch?v=_FRiPPbJsFQ)

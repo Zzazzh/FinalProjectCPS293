@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://x6b2djadpjq2" path="res://Sprites/badarrow.png" id="4_7bws4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tlmev"]
-size = Vector2(5.58864, 8.86427)
+size = Vector2(9.44443, 6.65304)
 
 [sub_resource type="Animation" id="Animation_deedj"]
 length = 0.001
@@ -73,28 +73,27 @@ _data = {
 }
 
 [node name="direction indicator 2" type="Area2D"]
+scale = Vector2(1.8, 1.80369)
 script = ExtResource("1_e6huc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.0934905, 26.5236)
-shape = SubResource("RectangleShape2D_tlmev")
-
 [node name="Sprite_idle" type="Sprite2D" parent="."]
-position = Vector2(1.17729, 25.9695)
-scale = Vector2(0.551246, 0.551246)
+position = Vector2(2.11113, 26.534)
 texture = ExtResource("2_841eq")
 
 [node name="Sprite_good" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(1.17729, 25.9695)
-scale = Vector2(0.551246, 0.551246)
+position = Vector2(2.11113, 26.534)
 texture = ExtResource("3_b8aha")
 
 [node name="Sprite_bad" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0)
-position = Vector2(1.17729, 25.9695)
-scale = Vector2(0.551246, 0.551246)
+position = Vector2(2.11113, 26.534)
 texture = ExtResource("4_7bws4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.277777, 30.4931)
+scale = Vector2(1.17778, 1.02218)
+shape = SubResource("RectangleShape2D_tlmev")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

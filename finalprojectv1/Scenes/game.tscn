@@ -17,10 +17,6 @@ offset_right = 1152.0
 offset_bottom = 652.0
 color = Color(0.224353, 0.382639, 0.359482, 1)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_0spqw")]
-position = Vector2(576, 325)
-scale = Vector2(1.92, 1.92)
-
 [node name="playerbound" parent="." instance=ExtResource("2_arats")]
 position = Vector2(576, 320)
 scale = Vector2(0.52, 0.52)
@@ -39,7 +35,7 @@ uppercase = true
 [node name="direction indicator 2" parent="." instance=ExtResource("6_gwmei")]
 position = Vector2(576, 320)
 rotation = 3.14159
-scale = Vector2(3.6, 3.6)
+scale = Vector2(3.4, 3.4)
 
 [node name="Spawn" type="Node" parent="."]
 
@@ -57,5 +53,9 @@ position = Vector2(256, 320)
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_0spqw")]
+position = Vector2(576, 325)
+scale = Vector2(1.92, 1.92)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
