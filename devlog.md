@@ -3,6 +3,21 @@
 * [Trello Board](https://trello.com/b/mR0VP2jR/final-project-todo)
 * [Proposal](https://github.com/Zzazzh/FinalProjectCPS293/blob/main/Proposal.pdf)
 
+##2024-10-22 4 hr: Created Direction Indicator, Enemy movement
+* created direction indicator with rotational movement
+* added signals for "good" and "bad" hits
+* 
+
+## 2024-10-21 2 hr: Found Rhythm Game tutorial videos and forums to create animation, enemy spawn, and enemy despawn. Began "enemy_up" scene
+* [Complete Godot Rhythm Game Tutorial] (https://www.youtube.com/watch?v=_FRiPPbJsFQ)
+* [Making a rhythm game with Godot & Midi] (https://www.youtube.com/watch?app=desktop&v=owbRRxrIp14)
+* [Tutorial RHYTHM GAME in Godot Engine] (https://www.youtube.com/watch?v=mwvcmbY8wiY&t=102s)
+* [Rotation of indicator] (https://forum.godotengine.org/t/2d-joystick-player-rotation/18671/2)
+* remade enemy sprite with eyes, added movement
+
+## 2024-10-12 1 hr: Fix Bugs with 'player bounds'
+* altered layer masks and collision script 
+
 ## 2024-10-8 3r: implement attack
 * [added draft animation] (https://www.youtube.com/watch?v=8EVHNbgQCBg)
 * created draft pixel art attack to see in debug

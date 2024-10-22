@@ -11,5 +11,5 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_hurtbox_area_entered(area: Area2D) -> void:
-	print_debug("slime hit") 
+	print_debug("hit") 
 	queue_free()

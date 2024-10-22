@@ -145,7 +145,8 @@ _data = {
 }
 
 [node name="player" type="CharacterBody2D"]
-scale = Vector2(0.995705, 1)
+position = Vector2(0, 5.96046e-07)
+scale = Vector2(1.51571, 1.52224)
 collision_mask = 3
 script = ExtResource("1_tv8cf")
 
