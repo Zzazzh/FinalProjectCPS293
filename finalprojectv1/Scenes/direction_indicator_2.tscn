@@ -73,6 +73,7 @@ _data = {
 }
 
 [node name="direction indicator 2" type="Area2D"]
+rotation = 5.88525
 scale = Vector2(1.8, 1.80369)
 script = ExtResource("1_e6huc")
 
@@ -92,13 +93,15 @@ texture = ExtResource("4_7bws4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.277777, 30.4931)
-scale = Vector2(1.17778, 1.02218)
+scale = Vector2(1.17778, 1.01671)
 shape = SubResource("RectangleShape2D_tlmev")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_cfjvj")
 }
+
+[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
 [connection signal="area_shape_exited" from="." to="." method="_on_area_shape_exited"]

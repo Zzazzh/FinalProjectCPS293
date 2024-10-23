@@ -3,6 +3,9 @@
 * [Trello Board](https://trello.com/b/mR0VP2jR/final-project-todo)
 * [Proposal](https://github.com/Zzazzh/FinalProjectCPS293/blob/main/Proposal.pdf)
 
+##2024-10-23 1.5 hr: added rotation snapping
+* added script so that if the rotation button is released within a degree threshold of any cardinal direction, the indicator clicks into the place (if button is released at 80 degrees, for example, it will be corrected to 90)
+
 ##2024-10-22 5 hr: (before class) Created Direction Indicator, Enemy movement 
 * created direction indicator with rotational movement
 * added signals for "good" and "bad" hits

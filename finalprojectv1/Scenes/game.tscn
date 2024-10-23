@@ -52,6 +52,7 @@ position = Vector2(896, 320)
 position = Vector2(256, 320)
 
 [node name="Timer" type="Timer" parent="."]
+wait_time = 1.25
 autostart = true
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_0spqw")]
