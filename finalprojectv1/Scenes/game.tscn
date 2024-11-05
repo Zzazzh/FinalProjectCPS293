@@ -34,7 +34,7 @@ uppercase = true
 
 [node name="direction indicator 2" parent="." instance=ExtResource("6_gwmei")]
 position = Vector2(576, 320)
-rotation = 3.14159
+rotation = -6.28319
 scale = Vector2(3.4, 3.4)
 
 [node name="Spawn" type="Node" parent="."]
