@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://cemt01rq336at"]
+
+[ext_resource type="Texture2D" uid="uid://bxi6brbhwu124" path="res://Sprites/enemydraft-1.png.png" id="1_4dv3q"]
+[ext_resource type="Script" path="res://Script/enemy.gd" id="1_488ec"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_rhge2"]
+radius = 20.9068
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_srl00"]
+radius = 19.9112
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j8e8u"]
+radius = 14.9667
+
+[node name="enemy" type="Node2D"]
+scale = Vector2(1.00446, 1.00268)
+
+[node name="enemybody" type="CharacterBody2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 4
+collision_mask = 8
+script = ExtResource("1_488ec")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemybody"]
+visible = false
+shape = SubResource("CircleShape2D_rhge2")
+
+[node name="Sprite2D" type="Sprite2D" parent="enemybody"]
+position = Vector2(13.9378, 22.9439)
+scale = Vector2(4.60447, 4.60447)
+texture = ExtResource("1_4dv3q")
+
+[node name="hurtbox" type="Area2D" parent="enemybody"]
+collision_layer = 4
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemybody/hurtbox"]
+scale = Vector2(1.03982, 1.03982)
+shape = SubResource("CircleShape2D_srl00")
+
+[node name="hitbox" type="Area2D" parent="enemybody"]
+collision_layer = 4
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="enemybody/hitbox"]
+scale = Vector2(1.39822, 1.39822)
+shape = SubResource("CircleShape2D_j8e8u")
+
+[connection signal="area_entered" from="enemybody/hurtbox" to="enemybody" method="_on_hurtbox_area_entered"]

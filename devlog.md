@@ -3,6 +3,15 @@
 * [Trello Board](https://trello.com/b/mR0VP2jR/final-project-todo)
 * [Proposal](https://github.com/Zzazzh/FinalProjectCPS293/blob/main/Proposal.pdf)
 
+
+##2024-11-05 1.5 hr: fixed dependency error
+* downloaded pngs stored in git from earlier push manually and continued replacing corrupted files
+
+##2024-11-04 5 hr: tried to implement "conductor" node, fix corrupt files
+* tried to add mechanism to measure beats and measures for a song to time enemy spawn properly
+* condensed "enemy_right" "enemy_left" "enemy_up" and "enemy_down" scenes into one "enemy" scene
+* had to re-do large portions of project because pulling from git caused dependency errors
+
 ##2024-10-23 1.5 hr: added rotation snapping
 * added script so that if the rotation button is released within a degree threshold of any cardinal direction, the indicator clicks into the place (if button is released at 80 degrees, for example, it will be corrected to 90)
 

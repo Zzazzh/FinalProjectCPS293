@@ -1,0 +1,4 @@
+res://Scenes/audio_stream_player.tscn
+res://Scenes/audio_stream_player.gd
+res://Script/game.gd
+res://Script/Global.gd
